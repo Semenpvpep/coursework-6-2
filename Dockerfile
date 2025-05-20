@@ -21,13 +21,8 @@ COPY --from=builder /app/hospital-management .
 # Теперь копируем фронтенд из корня проекта
 COPY frontend ./frontend
 
+# УДАЛИТЬ все ENV переменные из Dockerfile (оставить только PORT)
 ENV PORT=8080
-ENV DB_HOST=postgres
-ENV DB_USER=postgres
-ENV DB_PASSWORD=postgres
-ENV DB_NAME=hospital
-ENV DB_PORT=5432
-ENV JWT_SECRET=secret
 
 EXPOSE 8080
 

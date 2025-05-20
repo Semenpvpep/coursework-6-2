@@ -5,25 +5,18 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile
     envVars:
+      - key: PORT
+        value: 8080
       - key: DB_HOST
-        fromDatabase:
-          name: courceworkdb  # Замените на имя вашей БД в Render
-          property: host
+        value: dpg-d0me5ce3jp1c7389cij0-a.internal
       - key: DB_USER
-        fromDatabase:
-          name: courceworkdb
-          property: user
+        value: courceworkdb_user
       - key: DB_PASSWORD
-        fromDatabase:
-          name: courceworkdb
-          property: password
+        sync: false
+        value: seychDMjHy556UPx7qWdjgVPUusN7ZKF
       - key: DB_NAME
-        fromDatabase:
-          name: courceworkdb
-          property: database
+        value: courceworkdb
       - key: DB_PORT
-        fromDatabase:
-          name: courceworkdb
-          property: port
+        value: 5432
       - key: JWT_SECRET
         generateValue: true
