@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: hospital-management
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DB_HOST
+        fromDatabase:
+          name: courceworkdb  # Замените на имя вашей БД в Render
+          property: host
+      - key: DB_USER
+        fromDatabase:
+          name: courceworkdb
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: courceworkdb
+          property: password
+      - key: DB_NAME
+        fromDatabase:
+          name: courceworkdb
+          property: database
+      - key: DB_PORT
+        fromDatabase:
+          name: courceworkdb
+          property: port
+      - key: JWT_SECRET
+        generateValue: true
