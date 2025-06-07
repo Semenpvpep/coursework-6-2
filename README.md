@@ -18,5 +18,4 @@ tests - папка с тестами
 Dockerfile - файл для запуска приложения
 ![image](https://github.com/user-attachments/assets/cc0ee304-639e-4297-b69a-9388d1c0a407)
 
-
 для запуска приложения в корневой папке необходимо прописать docker-compose up
