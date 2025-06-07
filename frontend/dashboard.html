@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Management - Dashboard</title>
+    <title>Управление больницами</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
 <div class="container">
     <header>
-        <h1>Hospital Management</h1>
+        <h1>Управление больницами</h1>
     </header>
 
     <div class="dashboard">
         <div class="appointment-form">
-            <h2>Create New Appointment</h2>
+            <h2>Создать новую запись</h2>
             <form id="appointmentForm">
                 <div class="form-group">
-                    <label for="appointmentTitle">Title</label>
+                    <label for="appointmentTitle">Наименование записи</label>
                     <input type="text" id="appointmentTitle" required>
                 </div>
                 <div class="form-group">
-                    <label for="doctorName">Doctor Name</label>
+                    <label for="doctorName">Доктор</label>
                     <input type="text" id="doctorName" required>
                 </div>
                 <div class="form-group">
-                    <label for="patientName">Patient Name</label>
+                    <label for="patientName">Пациент</label>
                     <input type="text" id="patientName" required>
                 </div>
                 <div class="form-group">
-                    <label for="startTime">Start Time</label>
+                    <label for="startTime">Начало записи</label>
                     <input type="datetime-local" id="startTime" required>
                 </div>
                 <div class="form-group">
-                    <label for="endTime">End Time</label>
+                    <label for="endTime">Конец записи</label>
                     <input type="datetime-local" id="endTime" required>
                 </div>
-                <button type="submit" class="btn">Create Appointment</button>
+                <button type="submit" class="btn">Создать запись</button>
             </form>
         </div>
 
         <div class="appointments-list">
-            <h2>Your Appointments</h2>
+            <h2>Ваши записи</h2>
             <div id="appointmentsContainer"></div>
         </div>
     </div>

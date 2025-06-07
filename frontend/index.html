@@ -7,48 +7,48 @@
         <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hospital Management - Login</title>
+        <title>Управление больницами - Вход</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
 <div class="container">
     <div class="auth-container">
-        <h1>Hospital Management</h1>
+        <h1>Управление больницами</h1>
 
         <div class="tabs">
-            <button class="tab-button active" onclick="openTab('login')">Login</button>
-            <button class="tab-button" onclick="openTab('register')">Register</button>
+            <button class="tab-button active" onclick="openTab('login')">Вход</button>
+            <button class="tab-button" onclick="openTab('register')">Регистрация</button>
         </div>
 
         <div id="login" class="tab-content active">
             <form id="loginForm">
                 <div class="form-group">
-                    <label for="loginUsername">Login</label>
+                    <label for="loginUsername">Логин</label>
                     <input type="text" id="loginUsername" required>
                 </div>
                 <div class="form-group">
-                    <label for="loginPassword">Password</label>
+                    <label for="loginPassword">Пароль</label>
                     <input type="password" id="loginPassword" required>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn">Вход</button>
             </form>
         </div>
 
         <div id="register" class="tab-content">
             <form id="registerForm">
                 <div class="form-group">
-                    <label for="registerName">Name</label>
+                    <label for="registerName">Имя</label>
                     <input type="text" id="registerName" required>
                 </div>
                 <div class="form-group">
-                    <label for="registerUsername">Login</label>
+                    <label for="registerUsername">Логин</label>
                     <input type="text" id="registerUsername" required>
                 </div>
                 <div class="form-group">
-                    <label for="registerPassword">Password</label>
+                    <label for="registerPassword">Пароль</label>
                     <input type="password" id="registerPassword" required>
                 </div>
-                <button type="submit" class="btn">Register</button>
+                <button type="submit" class="btn">Регистрация</button>
             </form>
         </div>
     </div>
